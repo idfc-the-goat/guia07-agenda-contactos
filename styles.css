@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.encabezado {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.encabezado h1 {
+  margin: 0 0 6px 0;
+}
+
+.encabezado p {
+  margin: 0;
+  color: #bdc3c7;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 0 15px;
+  align-items: start;
+}
+
+.panel {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #3498db;
+}
+
+label {
+  display: block;
+  margin: 12px 0 4px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 4px #3498db;
+}
+
+.btn {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primario {
+  background-color: #3498db;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.btn-primario:hover {
+  background-color: #2980b9;
+}
+
+.btn-secundario {
+  background-color: #27ae60;
+}
+
+.btn-secundario:hover {
+  background-color: #1e8449;
+}
+
+.btn-peligro {
+  background-color: #e74c3c;
+}
+
+.btn-peligro:hover {
+  background-color: #c0392b;
+}
+
+.mensaje {
+  min-height: 22px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.mensaje.ok {
+  color: #27ae60;
+}
+
+.mensaje.error {
+  color: #c0392b;
+}
+
+.badge {
+  background-color: #3498db;
+  color: white;
+  font-size: 13px;
+  padding: 2px 9px;
+  border-radius: 12px;
+  vertical-align: middle;
+}
+
+.lista {
+  margin-top: 15px;
+}
+
+.tarjeta-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8fbff;
+  border-left: 5px solid #3498db;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-contacto .info strong {
+  display: block;
+}
+
+.tarjeta-contacto .info span {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.acciones {
+  display: flex;
+  gap: 6px;
+}
+
+.vacio {
+  color: #95a5a6;
+  text-align: center;
+}
+
+.detalle-fila {
+  padding: 8px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.detalle-fila span {
+  display: block;
+  font-size: 12px;
+  color: #7f8c8d;
+  text-transform: uppercase;
+}
